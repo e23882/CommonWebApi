@@ -73,7 +73,7 @@ namespace WebApi.Controllers
             catch (Exception ie)
             {
                 StockData result = new StockData();
-                return Request.CreateResponse(HttpStatusCode.OK, "Error Message");
+                return Request.CreateResponse(HttpStatusCode.ExpectationFailed, "Error Message");
             }
         }
         /// <summary>
@@ -94,7 +94,7 @@ namespace WebApi.Controllers
             catch (Exception ie)
             {
                 StockData result = new StockData();
-                return Request.CreateResponse(HttpStatusCode.OK, "Error Message");
+                return Request.CreateResponse(HttpStatusCode.ExpectationFailed, "Error Message");
             }
         }
 
